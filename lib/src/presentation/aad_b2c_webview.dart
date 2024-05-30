@@ -226,11 +226,11 @@ class ADB2CEmbedWebViewState extends State<ADB2CEmbedWebView> {
             visible: loadingReplacement == null && (isLoading || showRedirect),
             child: const Center(
               child: SizedBox(
-                height: 250,
-                width: 250,
+                height: 100,
+                width: 100,
                 child: CircularProgressIndicator(
                   backgroundColor: Colors.white,
-                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
                 ),
               ),
             ),
@@ -239,7 +239,7 @@ class ADB2CEmbedWebViewState extends State<ADB2CEmbedWebView> {
             visible: loadingReplacement == null && isLoading,
             child: const Positioned(
               child: Center(
-                child: Text('Redirecting to Secure Login...'),
+                child: Text(''),
               ),
             ),
           ),
