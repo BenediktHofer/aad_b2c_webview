@@ -178,6 +178,8 @@ class ADB2CEmbedWebViewState extends State<ADB2CEmbedWebView> {
       tenantBaseUrl: widget.tenantBaseUrl,
     );
 
+    print("tokensData: $tokensData");
+
     if (tokensData != null) {
       if (!mounted) return;
       // call redirect function
